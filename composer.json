@@ -16,7 +16,10 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/contracts": "^10.48 || ^11.0"
+        "illuminate/contracts": "^10.48 || ^11.0",
+        "illuminate/support": "^10.48 || ^11.0",
+        "illuminate/http": "^10.48 || ^11.0",
+        "spiral/data-grid": "^3.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.42",
@@ -31,11 +34,13 @@
         "phpstan/phpstan-strict-rules": "^1.5",
         "phpunit/phpunit": "^10.5",
         "roave/security-advisories": "dev-latest",
-        "wayofdev/cs-fixer-config": "^1.2"
+        "wayofdev/cs-fixer-config": "^1.2",
+        "wayofdev/laravel-cycle-orm-adapter": "^4.10",
+        "wayofdev/laravel-cycle-orm-factories": "^1.1"
     },
     "autoload": {
         "psr-4": {
-            "WayOfDev\\Package\\": "src/"
+            "WayOfDev\\QueryBuilder\\": "src/"
         }
     },
     "autoload-dev": {
@@ -65,7 +70,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WayOfDev\\Package\\Bridge\\Laravel\\Providers\\PackageServiceProvider"
+                "WayOfDev\\QueryBuilder\\Bridge\\Laravel\\Providers\\QueryBuilderServiceProvider"
             ]
         },
         "composer-normalize": {
