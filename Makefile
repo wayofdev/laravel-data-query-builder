@@ -57,7 +57,7 @@ else
 	WHITE := ""
 	RST := ""
 endif
-MAKE_LOGFILE = /tmp/wayofdev-laravel-package-tpl.log
+MAKE_LOGFILE = /tmp/wayofdev-laravel-data-query-builder.log
 MAKE_CMD_COLOR := $(BLUE)
 
 default: all
@@ -70,7 +70,7 @@ help:
 	@echo
 	@echo '    📑 Logs are stored in      $(MAKE_LOGFILE)'
 	@echo
-	@echo '    📦 Package                 laravel-package-tpl (github.com/wayofdev/laravel-package-tpl)'
+	@echo '    📦 Package                 laravel-data-query-builder (github.com/wayofdev/laravel-data-query-builder)'
 	@echo '    🤠 Author                  Andrij Orlenko (github.com/lotyp)'
 	@echo '    🏢 ${YELLOW}Org                     wayofdev (github.com/wayofdev)${RST}'
 .PHONY: help

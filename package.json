@@ -1,6 +1,6 @@
 {
-    "version": "2.2.0",
+    "version": "0.1.0",
     "repository": {
-        "url": "https://github.com/wayofdev/laravel-package-tpl.git"
+        "url": "https://github.com/wayofdev/laravel-data-query-builder.git"
     }
 }
