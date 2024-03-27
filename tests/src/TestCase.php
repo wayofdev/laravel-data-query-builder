@@ -7,7 +7,7 @@ namespace WayOfDev\Tests;
 use Faker\Factory as FakerFactory;
 use Faker\Generator;
 use Orchestra\Testbench\TestCase as Orchestra;
-use WayOfDev\Package\Bridge\Laravel\Providers\PackageServiceProvider;
+use WayOfDev\QueryBuilder\Bridge\Laravel\Providers\QueryBuilderServiceProvider;
 
 use function array_key_exists;
 
@@ -33,7 +33,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app): array
     {
         return [
-            PackageServiceProvider::class,
+            QueryBuilderServiceProvider::class,
         ];
     }
 }
